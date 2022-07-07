@@ -1,0 +1,46 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body{
+    background-color: #004643;
+}
+
+.container{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.box{
+    font-size: 100px;
+}
+
+.box-g{
+    font-size: 100px;
+    color: #f9bc60;
+}
+
+.container #vai{
+    padding: 20px 50px;
+    font-size: 30px;
+}
+
+.container #vai{
+    background-color: #f9bc60;
+    color: #001e1d;
+}
+
+#vai:hover{
+    opacity: 0.7;
+}
+
+.container #risultato{
+    font-size: 50px;
+    color: #f9bc60;
+}

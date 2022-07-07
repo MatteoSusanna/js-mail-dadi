@@ -9,19 +9,19 @@ stampa un messaggio appropriato sull’esito del controllo.
 const mail = ['matteo@gmail.com', 'roberta@gmail.com', 'federico@gmail.com', 'carla@gmail.com'];
 const mailIns = document.getElementById('email');
 
-let ric;
+let puoiEntrare;
 document.getElementById('vai').addEventListener('click',
 function(){
     for (let i = 0; i < mail.length; i++) {
     
         if(mail[i] == mailIns.value){
-            ric = 'si';
+            puoiEntrare = 'si';
             alert ('la mail ' + mailIns.value + ' è nella lista');
         }
         
     }
     
-    if(ric != 'si'){
+    if(puoiEntrare != 'si'){
         alert ('la mail ' + mailIns.value + ' non è nella lista');
     }
 }

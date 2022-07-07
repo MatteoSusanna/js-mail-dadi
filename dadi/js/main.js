@@ -5,16 +5,31 @@ Stabilire il vincitore, in base a chi fa il punteggio più alto.
 */
 
 
-const numeroGiocatore = Math.floor(Math.random() * 6) + 1;
-console.log(numeroGiocatore);
 
-const numeroPc = Math.floor(Math.random() * 6) + 1;
-console.log(numeroPc);
+let numeroGiocatore = document.getElementById('boxGiocatore');
+let numeroPc = document.getElementById('boxPc');
+let risultatoDom = document.getElementById('risultato');
 
-    if(numeroGiocatore > numeroPc){
-        alert ('Hai vinto!! è uscito ' + numeroGiocatore + ' e per il pc ' + numeroPc);
-    }else if(numeroGiocatore == numeroPc){
-        alert ('è un pareggio di ' + numeroPc + ' a ' + numeroGiocatore );
-    }else{
-        alert ('Ha vinto il PC con ' + numeroPc + ' che più altro del tuo numero ' + numeroGiocatore);
-    }
+
+
+document.getElementById('vai').addEventListener('click',
+function(){
+
+    numeroGiocatore.innerHTML = Math.floor(Math.random() * 6) + 1;
+    numeroPc.innerHTML = Math.floor(Math.random() * 6) + 1;
+
+
+        if(numeroGiocatore.innerHTML > numeroPc.innerHTML){
+            risultatoDom.innerHTML = 'Hai vinto!!';
+        }else if(numeroGiocatore.innerHTML == numeroPc.innerHTML){
+            risultatoDom.innerHTML = 'E un pareggio!!';
+        }else{
+            risultatoDom.innerHTML = 'Ha vinto il PC!!';
+        }
+        
+
+
+}
+);
+
+
